@@ -2,6 +2,12 @@ import random
 
 
 def main():
+    name = ""
+    print("What is your name?")
+    while not name:
+        name = input("> ")
+    print(f"Hello, {name}")
+
     print("Rolling dice...")
     die1 = random.randint(1,6)
     die2 = random.randint(1,6)
